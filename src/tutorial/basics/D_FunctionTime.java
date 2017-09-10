@@ -1,5 +1,7 @@
 package tutorial.basics;
 
+import java.util.Scanner;
+
 public class D_FunctionTime {
     public static void main(String ... args) {
         // functions allow you to reuse code and make everything easier to read
@@ -11,11 +13,12 @@ public class D_FunctionTime {
 
         int sum = add(a,b);
 
+
         System.out.println(sum);
     }
 
     // ignore the private static bit for now
-    private static int add(int a, int b) {
+    static int add(int a, int b) {
         // You are free to make things complicated if you want.
         return sub(a, b * -1);
     }
@@ -27,7 +30,7 @@ public class D_FunctionTime {
      * @param b the number to subtract
      * @return (now explain what is being returned) a minus b
      */
-    private static int sub(int a, int b) {
+    static int sub(int a, int b) {
         return a - b;
     }
 }
